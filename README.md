@@ -41,9 +41,9 @@ docker-compose -f whoami.yml up
 
 
 
-You can now go to your browser at [whoami.docker.localhost](https://whoami.docker.localhost), enjoy :rocket: !
+You can now go to your browser at [whoami.docker.localhost](https://whoami.docker.localhost) or [whoami.domain.local](https://whoami.domain.local), enjoy :rocket: !
 
-*Note: you can access to Træfik dashboard at: [traefik.docker.localhost](https://traefik.docker.localhost)*
+*Note: you can access to Træfik dashboard at: [traefik.docker.localhost](https://traefik.docker.localhost) or [traefik.domain.local](https://traefik.domain.local)*
 
 Don't forget that you can also map TCP and UDP through Træfik.
 
