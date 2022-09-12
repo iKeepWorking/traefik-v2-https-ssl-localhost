@@ -36,7 +36,7 @@ Now, start containers with :
 # Start Traefik
 docker-compose -f docker-compose.yml up -d
 # Start "whoami" example
-docker-compose -f whoami.yml up
+docker-compose -f whoami.yml up -d
 ```
 
 
@@ -49,8 +49,11 @@ Don't forget that you can also map TCP and UDP through Træfik.
 
 *Remember the static ip addresses of whoami.domain.local and traefik.domain.local to your host file if necessary*
 
+```
 192.168.xx.xx   whoami.domain.local  
 192.168.xx.xx   traefik.domain.local
+
+```
 
 
 
