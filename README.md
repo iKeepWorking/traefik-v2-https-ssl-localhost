@@ -47,6 +47,13 @@ You can now go to your browser at [whoami.docker.localhost](https://whoami.docke
 
 Don't forget that you can also map TCP and UDP through Træfik.
 
+*Remember the static ip addresses of whoami.domain.local and traefik.domain.local to your host file if necessary*
+
+192.168.xx.xx   whoami.domain.local  
+192.168.xx.xx   traefik.domain.local
+
+
+
 ## Code of Conduct
 
 This project adheres to the [Contributor Covenant](https://www.contributor-covenant.org/). By participating in this project you agree to abide by its terms.
