@@ -1,3 +1,5 @@
 certs/*
 .idea
 .DS_Store
+nginx-config/logs/
+nginx-config/static/
