@@ -23,22 +23,14 @@ services:
   nginx:
     image: "nginx:latest"
     container_name: nginx
-    expose:
-      - 8080
-    environment:
-      - NGINX_HOST=nginx.domain.local
-      - NGINX_PORT=8080
     volumes:
       - ./nginx-config/static:/usr/share/nginx/html
       - ./nginx-config/logs:/var/log/nginx
-      - ./nginx-config/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx-config/templates:/etc/nginx/templates
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=proxy"
       - "traefik.http.routers.nginx_static.rule=Host(`nginx.docker.localhost`) || Host(`nginx.domain.local`)"
       - "traefik.http.routers.nginx_static.tls=true"
-      - "traefik.http.services.nginx_static.loadbalancer.server.port=8080"
     networks:
       - proxy
 
